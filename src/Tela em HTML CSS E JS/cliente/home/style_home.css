@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #f9f9f9;
+  display: flex;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+  background: #fff;
+  border-right: 1px solid #ddd;
+  width: 60px;
+  transition: width 0.3s;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.sidebar.expanded {
+  width: 200px;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.sidebar .toggle-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.sidebar .icon {
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+.sidebar.expanded .text {
+  display: inline;
+}
+
+.sidebar .text {
+  display: none;
+}
+
+/* Main */
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.welcome {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.banner {
+  height: 150px;
+  background: #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.category-nav {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.category-nav button {
+  padding: 10px 20px;
+  background: #eee;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.category-nav .active {
+  background: orange;
+  color: white;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.img-placeholder {
+  background: #555;
+  height: 100px;
+}
+
+.img-placeholder.light {
+  background: #ccc;
+}
+
+.info {
+  padding: 10px;
+}
+
+.info h4 {
+  margin-bottom: 5px;
+}
+
+.price-add {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.add-btn {
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}

@@ -1,0 +1,191 @@
+
+.modal {
+  width: 500px;
+  background: var(--fundo-card);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.modal-header {
+  background-color: var(--primary);
+  color: var(--texto-claro);
+  padding: 8px;
+  font-family: var(--font-titulo);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-title {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: var(--texto-claro);
+  cursor: pointer;
+  font-family: var(--font-texto);
+}
+
+.modal-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+  font-family: var(--font-texto);
+}
+.step.preenchida {
+  background-color: var(--sucesso) !important;
+}
+
+.barra-progresso{
+    height: 3px;
+    width: 120px;
+    background-color: var(--fundo-escuro);
+    line-height: 32px;
+}
+
+.barra-progresso.preenchida {
+  background-color: var(--sucesso);
+}
+
+.step {
+  width: 32px;
+  height: 32px;
+  background-color: var(--fundo-escuro);
+  color: var(--texto-claro);
+  border-radius: 50%;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+.step.active {
+  background-color: var(--complementar);
+  color: var(--texto-claro);
+}
+
+.step-labels {
+  display: flex;
+  justify-content: space-around;
+  font-size: 12px;
+  color: var(--texto-secundario);
+  font-family: var(--font-texto);
+  margin-bottom: 20px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.option {
+  border: none;
+  border-radius: 24px;
+  padding: 12px 24px;
+  color: var(--texto-claro);
+  font-family: var(--font-texto);
+  font-weight: 500;
+  cursor: pointer;
+  width: 300px;
+}
+
+.option.cliente {
+  background-color: var(--sucesso);
+}
+
+.option.vendedor {
+  background-color: var(--complementar);
+}
+
+
+.option.active {
+  background-color: var(--primary); /* verde de sucesso */
+  color: #fff;
+  border-color: var(--primary);
+  box-shadow: 0 0 10px rgba(25, 135, 84, 0.5);
+  transform: scale(1.03);
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.cancelar {
+  background: transparent;
+  border: 2px solid var(--alerta);
+  color: var(--alerta);
+  font-family: var(--font-texto);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.voltar {
+  background-color: var(--texto-claro);
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  font-family: var(--font-texto);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.proximo {
+  background-color: var(--primary);
+  color: var(--texto-claro);
+  font-family: var(--font-texto);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.form-group {
+  margin-bottom: 16px;
+  font-family: var(--font-texto);
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 500;
+  color: var(--texto-primario);
+  font-family: var(--font-texto);
+  text-align: left;
+}
+
+.form-group input, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--borda-suave);
+  border-radius: 8px;
+  font-size: 14px;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+}
+
+.form-group.half {
+  flex: 1;
+}
