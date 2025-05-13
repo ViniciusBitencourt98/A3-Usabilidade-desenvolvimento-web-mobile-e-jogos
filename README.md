@@ -31,3 +31,10 @@ Este repositório contém os **protótipos visuais** da aplicação, desenvolvid
 - **Frontend:** React.js
 - **Backend:** Node.js + Express
 - **Banco de dados:** MySQL
+
+## Integrantes
+- Allan Lucas de Jesus Nascimento / 12725157323
+- Vinicius Bitencourt Assis / 12724129830
+- Rebert da Silva Azevedo / 1272320687
+- Ana Beatriz Santos da Silva / 12724220932
+- Caio Portugal de Oliveira / 12725168958
