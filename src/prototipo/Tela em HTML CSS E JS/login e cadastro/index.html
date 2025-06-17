@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Delivery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>A fome não espera. Faça seu login!</h1>
+
+        <div class="tabs">
+            <button class="tab active" onclick="selectTab('cliente')" id="tab-cliente" style="margin-right: -15px;">Cliente</button>
+            <button class="tab" onclick="selectTab('restaurante')" id="tab-restaurante" style="margin-left: -15px;">Restaurante</button>
+        </div>
+
+        <form id="form-login">
+            <label for="usuario" id="label-nome">Usuário:</label>
+            <input type="text" id="usuario" name="usuario" placeholder="Digite o seu usuário">
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" placeholder="Digite a sua senha">
+
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+
+    <div class="container-linha">
+        <div class="linha"></div>
+        <span>ou</span>
+        <div class="linha"></div>
+    </div>
+
+    <div class="container-registrar"><a href="" id="abrirModal">Registre-se</a></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

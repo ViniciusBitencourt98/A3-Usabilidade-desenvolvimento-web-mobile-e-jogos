@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delivery App</title>
+    <link rel="stylesheet" href="style_home.css" />
+    <script defer src="script_home.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <aside id="sidebar" class="sidebar">
+            <button id="toggleSidebar" class="toggle-btn">☰</button>
+            <nav>
+                <ul>
+                    <li><span class="icon">🏠</span><span class="text">Início</span></li>
+                    <li><span class="icon">🧾</span><span class="text">Pedidos</span></li>
+                    <li><span class="icon">⚙️</span><span class="text">Configurações</span></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header>
+                <p class="welcome">SEJA BEM-VINDO, BAR DA ESQUINA!</p>
+            </header>
+
+            <section class="product-grid">
+
+                <div class="containers">
+                    <div class="status">
+                        <div class="valor">Valor: R$19,99 Reais</div>
+                        <div class="entregas">Entregues: 10 Pedidos</div>
+                    </div>
+
+                    <div class="orders">
+                        <div class="order-card">
+                            <h3>Pedido #123</h3>
+                            <p>Itens:</p>
+                            <p>🍔 Lorum ipsum dolor</p>
+                            <p>🍟 metus sed in vitae</p>
+                            <div class="price">R$19,99</div>
+                            <div class="actions">
+                                <button class="btn confirm" onclick="confirmOrder(123)">Confirmar</button>
+                                <button class="btn cancel" onclick="cancelOrder(125)">Cancelar</button>
+                            </div>
+                        </div>
+
+                        <div class="order-card">
+                            <h3>Pedido #124</h3>
+                            <p>Itens:</p>
+                            <p>🍔 Lorum ipsum dolor</p>
+                            <p>🍟 metus sed in vitae</p>
+                            <div class="price">R$10,00</div>
+                            <div class="actions">
+                                <button class="btn deliver" onclick="deliverOrder(124)">Entregar</button>
+                            </div>
+                        </div>
+
+                        <div class="order-card">
+                            <h3>Pedido #125</h3>
+                            <p>Itens:</p>
+                            <p>🍔 Lorum ipsum dolor</p>
+                            <p>🍟 metus sed in vitae</p>
+                            <div class="price">R$5,99</div>
+                            <div class="actions">
+                                <button class="btn deliver" onclick="deliverOrder(124)">Entregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
